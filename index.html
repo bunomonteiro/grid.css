@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid.css by bunomonteiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Grid.css</h1>
+      <h2 class="project-tagline">A simple, responsive, mobile first and and without dependencies 16-columns grid system.</h2>
+      <a href="https://github.com/bunomonteiro/grid.css" class="btn">View on GitHub</a>
+      <a href="https://github.com/bunomonteiro/grid.css/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/bunomonteiro/grid.css/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="gridcss" class="anchor" href="#gridcss" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grid.css</h1>
+
+<p>A simple, responsive, mobile first and and without dependencies 16-columns grid system. See a demo: <a href="http://bunomonteiro.github.io/grid/">Grid Demo</a></p>
+
+<p>Don't worry about the size. Minified and gzipped is less than 3.5kb.</p>
+
+<h3>
+<a id="version" class="anchor" href="#version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version</h3>
+
+<p>1.0.0</p>
+
+<h3>
+<a id="maintained-by" class="anchor" href="#maintained-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintained by</h3>
+
+<p><a href="http://buno.com.br">Bruno Monteiro</a>, also known as <a href="http://buno.com.br">b'uno</a>. (<a href="http://linkedin.com/in/bunomonteiro">linkedin</a> - <a href="https://hashnode.com/@bunomonteiro">hashcode</a> - <a href="http://twitter.com/bunomonteiro">twitter</a> - <a href="http://fb.com/bunomonteiro">facebook</a>)</p>
+
+<h3>
+<a id="tech" class="anchor" href="#tech" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tech</h3>
+
+<p>Grid.css was created using a number of open source projects:</p>
+
+<ul>
+<li>
+<a href="http://nodejs.org">Node.js</a> - evented I/O for the backend</li>
+<li>
+<a href="http://gulpjs.com">Gulp</a> - the streaming build system</li>
+<li>
+<a href="http://sass-lang.com/">Sass</a> - syntactically awesome style sheets</li>
+</ul>
+
+<p>And of course Grid.css itself is open source with a <a href="https://github.com/bunomonteiro/grid.css">public repository</a>.</p>
+
+<h3>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h3>
+
+<p>Add the following meta tag to your HTML’s </p> section to keep viewport scale:
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>viewport<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>width=device-width,initial-scale=1<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>Add the following stylesheet to your HTML’s </p> section:
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>YOUR_STYLE_PATH/grid.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>or if you want to use the bundle that includes the reset.css by <a href="http://meyerweb.com/eric/tools/css/reset/">Eric A. Meyer</a> (recommended)</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>YOUR_STYLE_PATH/grid.bundle.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>Then the markups:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col xs-16<span class="pl-pds">"</span></span>&gt;
+      ...
+    &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h3>
+
+<p>Want to contribute? Great!</p>
+
+<p>Grid.css uses Gulp + Browsersync for fast developing.
+Make a change in your file and instantanously see your updates!</p>
+
+<p>Open your favorite Terminal and run these commands.</p>
+
+<p>You need Gulp installed globally:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm i -g gulp</pre></div>
+
+<p>then:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/bunomonteiro/grid.css.git grid
+$ <span class="pl-c1">cd</span> grid
+$ gulp serve</pre></div>
+
+<h3>
+<a id="customize" class="anchor" href="#customize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize</h3>
+
+<p>16 columns is too much or too little for you? Don't worry, just change the variable at the beginning of src/styles/grid.scss file:</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-smi">$total-cols</span>: <span class="pl-c1">16</span> //<span class="pl-c1">default</span></pre></div>
+
+<p>Do you want to increase or decrease the margins?</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-smi">$col-margin</span>: <span class="pl-c1">2</span><span class="pl-k">%</span> //<span class="pl-c1">default</span></pre></div>
+
+<p>After that:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp clean
+$ gulp</pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The <strong>Grid.css</strong> source code is issued under <a href="http://opensource.org/licenses/MIT">MIT license</a>, a permissive free license, which means you can modify it as you please, and incorporate it into your own commercial or non-commercial software.</p>
+
+<p><strong>Free Software, oh yeah!</strong></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/bunomonteiro/grid.css">Grid.css</a> is maintained by <a href="https://github.com/bunomonteiro">bunomonteiro</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-71617239-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
