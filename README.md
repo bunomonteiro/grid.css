@@ -1,6 +1,8 @@
 # Grid.css
 A simple, responsive, mobile first and and without dependencies 16-columns grid system. See a demo: [Grid Demo]
 
+Don't worry about the size. Minified and gzipped is less than 3.5kb.
+
 ### Version
 1.0.0
 
