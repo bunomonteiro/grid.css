@@ -1,0 +1,29 @@
+{
+  "name": "grid.css",
+  "version": "1.0.0",
+  "description": "A simple and semantic responsive sass/css grid system.",
+  "main": "",
+  "author": "Bruno Monteiro",
+  "keywords": [
+    "grid",
+    "css",
+    "sass",
+    "open",
+    "source"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "private": true,
+  "dependencies": {
+    "browser-sync": "^2.10.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1"
+  }
+}

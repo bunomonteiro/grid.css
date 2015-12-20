@@ -1,0 +1,231 @@
+$size-xs: 400px !default;
+$size-xs-min: $size-xs !default;
+$size-sm: 550px !default;
+$size-sm-min: $size-sm !default;
+$size-md: 750px !default;
+$size-md-min: $size-md !default;
+$size-lg: 1000px !default;
+$size-lg-min: $size-lg !default;
+$size-xl: 1200px !default;
+$size-xl-min: $size-xl !default;
+$size-xs-max: ($size-sm-min - 1) !default;
+$size-sm-max: ($size-md-min - 1) !default;
+$size-md-max: ($size-lg-min - 1) !default;
+$size-lg-max: ($size-xl-min - 1) !default;
+$total-cols: 16;
+$col-margin: 2%;
+$sizes: xs, sm, md, lg, xl;
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.container.fluid .col,
+.row.fluid .col {
+  margin: 0;
+}
+.container.fluid .row,
+.row.fluid {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.container.non-fluid .row,
+.row.non-fluid,
+.row {
+  padding-left: $col-margin / 2;
+  padding-right: $col-margin / 2;
+  width: 100%;
+}
+.clearfix:after,
+.container.fluid:after,
+.row.fluid:after {
+  clear: both;
+  content: " ";
+}
+.row,
+.col {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+.row:before,
+.row:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.container.non-fluid .row .col,
+.row.non-fluid .col,
+.col {
+  float: left;
+  margin-left: $col-margin / 2;
+  margin-right: $col-margin / 2;
+  min-height: 1px;
+  width: 100%;
+}
+@mixin create-cols($size) {
+  @for $i from 1 through $total-cols {
+    $col-fluid-width: (100% / $total-cols * $i);
+    $col-width: $col-fluid-width - $col-margin;
+    // fluid
+    .container.fluid .col.#{$size}-#{$i},
+    .row.fluid .col.#{$size}-#{$i} {
+      width: $col-fluid-width;
+    }
+
+    .container.fluid .col.#{$size}-offset-#{$i},
+    .row.fluid .col.#{$size}-offset-#{$i} {
+      margin-left: $col-fluid-width;
+    }
+    // non fluid
+    .container.non-fluid .row .col.#{$size}-#{$i},
+    .row.non-fluid .col.#{$size}-#{$i},
+    .col.#{$size}-#{$i} {
+      width: $col-width;
+    }
+    .container.non-fluid .row .col.#{$size}-offset-#{$i},
+    .row.non-fluid .col.#{$size}-offset-#{$i},
+    .col.#{$size}-offset-#{$i} {
+      margin-left: $col-width + ($col-margin * 1.5);
+    }
+
+    @if($i == 1){
+      // fluid
+      .container.fluid .col.#{$size}-offset-0,
+      .row.fluid .col.#{$size}-offset-0 {
+        margin-left: 0;
+      }
+      // non fluid
+      .container.non-fluid .row .col.#{$size}-offset-0,
+      .row.non-fluid .col.#{$size}-offset-0,
+      .col.#{$size}-offset-0 {
+        margin-left: $col-margin / 2;
+      }
+    }
+  }
+}
+@each $size in $sizes {
+  @if $size == xs {
+    @include create-cols($size);
+  }
+  @else if ($size == sm) {
+    @media (min-width: $size-sm-min) {
+      @include create-cols($size);
+    }
+  }
+  @else if ($size == md) {
+    @media (min-width: $size-md-min) {
+      @include create-cols($size);
+    }
+  }
+  @else if ($size == lg) {
+    @media (min-width: $size-lg-min) {
+      @include create-cols($size);
+    }
+  }
+  @else {
+    @media (min-width: $size-xl-min) {
+      @include create-cols($size);
+    }
+  }
+}
+/* tutilities */
+.margin-top {
+  margin-top: $col-margin / 2 !important;
+}
+.margin-right {
+  margin-right: $col-margin / 2 !important;
+}
+.margin-bottom {
+  margin-bottom: $col-margin / 2 !important;
+}
+.margin-left {
+  margin-left: $col-margin / 2 !important;
+}
+.pull-left {
+  float: left !important;
+}
+.center {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: initial !important;
+}
+@media (max-width: $size-xs-max) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display: initial !important;
+  }
+}
+@media (min-width: $size-sm-min) and (max-width: $size-sm-max) {
+  .hidden-sm {
+    display: none !important;
+  }
+  .visible-sm {
+    display: initial !important;
+  }
+}
+@media (min-width: $size-md-min) and (max-width: $size-md-max) {
+  .hidden-md {
+    display: none !important;
+  }
+  .visible-md {
+    display: initial !important;
+  }
+}
+@media (min-width: $size-lg-min) and (max-width: $size-lg-max) {
+  .hidden-lg {
+    display: none !important;
+  }
+  .visible-lg {
+    display: initial !important;
+  }
+}
+@media (min-width: $size-xl-min) {
+  .hidden-xl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: initial !important;
+  }
+}
