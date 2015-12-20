@@ -1,143 +1,577 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Grid.css by bunomonteiro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Grid.css</h1>
-      <h2 class="project-tagline">A simple, responsive, mobile first and and without dependencies 16-columns grid system.</h2>
-      <a href="https://github.com/bunomonteiro/grid.css" class="btn">View on GitHub</a>
-      <a href="https://github.com/bunomonteiro/grid.css/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/bunomonteiro/grid.css/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
 
-    <section class="main-content">
-      <h1>
-<a id="gridcss" class="anchor" href="#gridcss" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grid.css</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Grid.css</title>
+  <link rel="stylesheet" href="stylesheets/grid.bundle.min.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
+</head>
 
-<p>A simple, responsive, mobile first and and without dependencies 16-columns grid system. See a demo: <a href="http://bunomonteiro.github.io/grid/">Grid Demo</a></p>
+<body>
+  <section>
+    <h1 class="text-center">Grid.css</h1>
+    <h2 class="text-center">Responsive 16-columns Grid System</h2>
+    <br>
+    <h4 class="text-center">made with
+      <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAAJFBMVEXe3d3///////////////////////////////////////////+AJZfKAAAADHRSTlMADx8uXGt7mbjH1+YNAtvkAAAAOUlEQVR42j3HQQ7AMAgDwU1KCsX//28lRPDBmoVlZ0PdTilPSDJe3X24ZtjQIZr5wIphRbOi2OHFH8IcAt0lQMVCAAAAAElFTkSuQmCC"></image> by <a href="http://www.buno.com.br" target="_blank">b'uno</a></h4>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row ">
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-15">
+          15
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-2">
+          2
+        </div>
+        <div class="col clearfix xs-14">
+          14
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-3">
+          3
+        </div>
+        <div class="col clearfix xs-13">
+          13
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-4">
+          4
+        </div>
+        <div class="col clearfix xs-12">
+          12
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-5">
+          5
+        </div>
+        <div class="col clearfix xs-11">
+          11
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-6">
+          6
+        </div>
+        <div class="col clearfix xs-10">
+          10
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-7">
+          7
+        </div>
+        <div class="col clearfix xs-9">
+          9
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-8">
+          8
+        </div>
+        <div class="col clearfix xs-8">
+          8
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-16">
+          16
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>Don't worry about the size. Minified and gzipped is less than 3.5kb.</p>
+  <section>
+    <h2 class="text-center">Columns with Offsets</h2>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row ">
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col clearfix xs-1">
+          1
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-14 xs-offset-1">
+          14 offset-1
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-12 xs-offset-2">
+          12 offset-2
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-10 xs-offset-3">
+          10 offset-3
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-8 xs-offset-4">
+          8 offset-4
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-6 xs-offset-5">
+          6 offset-5
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-4 xs-offset-6">
+          4 offset-6
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-2 xs-offset-7">
+          2 offset-7
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-1 center">
+          1 center
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col clearfix xs-1">
+          1
+        </div>
+        <div class="col xs-1 clearfix xs-offset-14">
+          1 offset-14
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>
-<a id="version" class="anchor" href="#version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version</h3>
+  <section>
+    <h2 class="text-center">Fluid Containers and Rows</h2>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row ">
+        <div class="col clearfix xs-8 transparent">
+          <h3 class="margin-bottom">8 non-fluid (default)</h3>
+          <br>
+          <div class="container">
+            <div class="row ">
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-8">
+                8
+              </div>
+              <div class="col clearfix xs-8">
+                8
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-16">
+                16
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col clearfix xs-8 transparent">
+          <h3 class="margin-bottom">8 fluid</h3>
+          <br>
+          <div class="container fluid">
+            <div class="row ">
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+              <div class="col clearfix xs-2">
+                2
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+              <div class="col clearfix xs-4">
+                4
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-8">
+                8
+              </div>
+              <div class="col clearfix xs-8">
+                8
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col clearfix xs-16">
+                16
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>1.0.0</p>
+  <section>
+    <h2 class="text-center">Nested Grids</h2>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row ">
+        <div class="col clearfix xs-16">
+          <div class="margin-bottom">16</div>
+          <div class="container">
+            <div class="row">
+              <div class="col xs-16">
+                16
+              </div>
+            </div>
+            <div class="row">
+              <div class="col xs-8">
+                <div class="margin-bottom">8</div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col xs-8">
+                      <div class="margin-bottom">8 fluid</div>
+                      <div class="container fluid">
+                        <div class="row">
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                        </div>
+                        <div class="row non-fluid">
+                          <div class="margin-bottom">row non-fluid</div>
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col xs-8">
+                      <div class="margin-bottom">8</div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                        <div class="row fluid">
+                          <div class="margin-bottom">row fluid</div>
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col xs-8">
+                <div class="margin-bottom">8 fluid</div>
+                <div class="container fluid">
+                  <div class="row">
+                    <div class="col xs-8">
+                      <div class="margin-bottom">8</div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                          <div class="col xs-4">4</div>
+                        </div>
+                        <div class="row non-fluid">
+                          <div class="margin-bottom">row non-fluid</div>
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col xs-8">
+                      <div class="margin-bottom">8 non-fluid</div>
+                      <div class="container non-fluid">
+                        <div class="row">
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                        <div class="row fluid">
+                          <div class="margin-bottom">row still non-fluid</div>
+                          <div class="col xs-8">8</div>
+                          <div class="col xs-8">8</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col xs-2">
+                2
+              </div>
+              <div class="col xs-6">
+                6
+              </div>
+              <div class="col xs-1">
+                1
+              </div>
+              <div class="col xs-1 xs-offset-2">
+                1
+              </div>
+              <div class="col xs-1">
+                1
+              </div>
+              <div class="col xs-1 xs-offset-2">
+                1
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>
-<a id="maintained-by" class="anchor" href="#maintained-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintained by</h3>
+  <footer>
+    <div class="container transparent">
+      <div class="row text-center">
+        <div class="col xs-14 xs-offset-1 sm-8 sm-offset-0">
+          <h3>Cross-browser</h3>
+          <hr>
+          <br>
+          <p>
+            This grid system works in all modern browsers, both desktop and mobile,
+            <br> including latest Chrome, Firefox, Safari, Opera, Internet Explorer and Edge.
+          </p>
+          <br>
+        </div>
+        <div class="col xs-14 xs-offset-1 sm-8 sm-offset-0">
+          <h3>License</h3>
+          <hr>
+          <br>
+          <p>This grid system is licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.</p>
+          <p>Is absolutely free for personal or commercial use.</p>
+          <br>
+        </div>
+      </div>
+      <div class="row contacts text-center">
+        <div class="col xs-14 xs-offset-1 sm-8 sm-offset-4">
+          <div class="contact">
+            <small>
+              <a href="http://www.buno.com.br" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAMAAAD6fQULAAAAhFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9hWbqAAAAAK3RSTlMABwsOFyozN0VPUVNlZmtzdXZ8h4yRnZ+ipbG4ucnL0d3f4uPl7O/y9vr9abf9zAAAAGFJREFUeAFNx1USAyEQANGOuztxCSQ797/fLkxRTH/1AxhefPV1A1In0TYRR8mtYSSlHs5ox8foTjDyPIwCB6M3faMzLIvmwDTj1QLozp5JE7RbxAJt2/x/rN/Zy++6agPUrNkYwxDHpygAAAAASUVORK5CYII="
+                alt="b'uno site">
+                <br> b'uno
+              </a>
+            </small>
+          </div>
+          <div class="contact">
+            <small>
+              <a href="https://github.com/bunomonteiro/grid.css" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA6ElEQVQoz23RoU+CARQE8FecDWEGN2AEbdpMmEgG/xM2gomkWSlsaiFT6GSDFjc3h0EpBkaA2TTgBqbvZ/D7GBu8a+9u793uQqTIq+sZGempy2f7jG74sjrfGquCjk3TyQRNvLkzRyLB3K13NEUogWuhrKaioqYstEAptEF3aTZDF7TDEInqmqAqwTD8YLxGhzDGLCww3SiYYhEm4GCN3geT0GfjkwfQD2e48uLXjSMhHLrwkYZ1GsLAyJZnHAvhZJnl43+SObwqKqbHt83Ap1zWRTG1WhDCDniyt9pmuDSwK4SCe+fZ/g+xqm2PiJNJfwAAAABJRU5ErkJggg=="
+                alt="Github repository">
+                <br> Github
+              </a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col xs-14 xs-offset-1 sm-8 sm-offset-4">
+          <p>
+            <small>© Bruno Monteiro 2015. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<p><a href="http://buno.com.br">Bruno Monteiro</a>, also known as <a href="http://buno.com.br">b'uno</a>. (<a href="http://linkedin.com/in/bunomonteiro">linkedin</a> - <a href="https://hashnode.com/@bunomonteiro">hashcode</a> - <a href="http://twitter.com/bunomonteiro">twitter</a> - <a href="http://fb.com/bunomonteiro">facebook</a>)</p>
+  <ul class="responsive-helper">
+    <li class="visible-xs shadowed">
+      <abbr title="Extra Small">XS</abbr>
+    </li>
+    <li class="visible-sm shadowed">
+      <abbr title="Small">SM</abbr>
+    </li>
+    <li class="visible-md shadowed">
+      <abbr title="Medium">MD</abbr>
+    </li>
+    <li class="visible-lg shadowed">
+      <abbr title="Large">LG</abbr>
+    </li>
+    <li class="visible-xl shadowed">
+      <abbr title="Extra Large">XL</abbr>
+    </li>
+  </ul>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-71617239-1");
+      pageTracker._trackPageview();
+    } catch (err) {}
+  </script>
+</body>
 
-<h3>
-<a id="tech" class="anchor" href="#tech" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tech</h3>
-
-<p>Grid.css was created using a number of open source projects:</p>
-
-<ul>
-<li>
-<a href="http://nodejs.org">Node.js</a> - evented I/O for the backend</li>
-<li>
-<a href="http://gulpjs.com">Gulp</a> - the streaming build system</li>
-<li>
-<a href="http://sass-lang.com/">Sass</a> - syntactically awesome style sheets</li>
-</ul>
-
-<p>And of course Grid.css itself is open source with a <a href="https://github.com/bunomonteiro/grid.css">public repository</a>.</p>
-
-<h3>
-<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h3>
-
-<p>Add the following meta tag to your HTML’s </p> section to keep viewport scale:
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>viewport<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>width=device-width,initial-scale=1<span class="pl-pds">"</span></span>&gt;</pre></div>
-
-<p>Add the following stylesheet to your HTML’s </p> section:
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>YOUR_STYLE_PATH/grid.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
-
-<p>or if you want to use the bundle that includes the reset.css by <a href="http://meyerweb.com/eric/tools/css/reset/">Eric A. Meyer</a> (recommended)</p>
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>YOUR_STYLE_PATH/grid.bundle.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
-
-<p>Then the markups:</p>
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;
-  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col xs-16<span class="pl-pds">"</span></span>&gt;
-      ...
-    &lt;/<span class="pl-ent">div</span>&gt;
-  &lt;/<span class="pl-ent">div</span>&gt;
-&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
-
-<h3>
-<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h3>
-
-<p>Want to contribute? Great!</p>
-
-<p>Grid.css uses Gulp + Browsersync for fast developing.
-Make a change in your file and instantanously see your updates!</p>
-
-<p>Open your favorite Terminal and run these commands.</p>
-
-<p>You need Gulp installed globally:</p>
-
-<div class="highlight highlight-source-shell"><pre>$ npm i -g gulp</pre></div>
-
-<p>then:</p>
-
-<div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/bunomonteiro/grid.css.git grid
-$ <span class="pl-c1">cd</span> grid
-$ gulp serve</pre></div>
-
-<h3>
-<a id="customize" class="anchor" href="#customize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize</h3>
-
-<p>16 columns is too much or too little for you? Don't worry, just change the variable at the beginning of src/styles/grid.scss file:</p>
-
-<div class="highlight highlight-source-scss"><pre><span class="pl-smi">$total-cols</span>: <span class="pl-c1">16</span> //<span class="pl-c1">default</span></pre></div>
-
-<p>Do you want to increase or decrease the margins?</p>
-
-<div class="highlight highlight-source-scss"><pre><span class="pl-smi">$col-margin</span>: <span class="pl-c1">2</span><span class="pl-k">%</span> //<span class="pl-c1">default</span></pre></div>
-
-<p>After that:</p>
-
-<div class="highlight highlight-source-shell"><pre>$ gulp clean
-$ gulp</pre></div>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
-
-<p>The <strong>Grid.css</strong> source code is issued under <a href="http://opensource.org/licenses/MIT">MIT license</a>, a permissive free license, which means you can modify it as you please, and incorporate it into your own commercial or non-commercial software.</p>
-
-<p><strong>Free Software, oh yeah!</strong></p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/bunomonteiro/grid.css">Grid.css</a> is maintained by <a href="https://github.com/bunomonteiro">bunomonteiro</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-71617239-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
 </html>
