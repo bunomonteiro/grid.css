@@ -107,6 +107,6 @@ The **Grid.css** source code is issued under [MIT license][MIT], a permissive fr
    [node.js]: <http://nodejs.org>
    [Gulp]: <http://gulpjs.com>
    [Sass]: <http://sass-lang.com/>
-   [Grid Demo]: <http://bunomonteiro.github.io/grid/>
+   [Grid Demo]: <http://bunomonteiro.github.io/grid.css/>
    [meyerweb]: <http://meyerweb.com/eric/tools/css/reset/>
    [MIT]: <http://opensource.org/licenses/MIT>
