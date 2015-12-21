@@ -1,3 +1,10 @@
+/**
+ * grid.css - A simple and semantic responsive sass/css grid system.
+ * @author Bruno Monteiro
+ * @version v1.0.0
+ * @link https://github.com/bunomonteiro/grid.css
+ * @license MIT
+ */
 .container * {
   box-sizing: border-box;
 }

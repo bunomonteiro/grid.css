@@ -4,6 +4,7 @@
   "description": "A simple and semantic responsive sass/css grid system.",
   "main": "",
   "author": "Bruno Monteiro",
+  "homepage": "https://github.com/bunomonteiro/grid.css",
   "keywords": [
     "grid",
     "css",
@@ -11,7 +12,7 @@
     "open",
     "source"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "engines": {
     "node": ">=0.12.0"
   },
@@ -21,9 +22,11 @@
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
     "gulp-minify-css": "^1.2.2",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1"
+    "gulp-sass": "^2.1.1",
+    "gulp-size": "^2.0.0"
   }
 }
