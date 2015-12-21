@@ -68,6 +68,7 @@ then:
 ```sh
 $ git clone https://github.com/bunomonteiro/grid.css.git grid
 $ cd grid
+$ npm install
 $ gulp serve
 ```
 
