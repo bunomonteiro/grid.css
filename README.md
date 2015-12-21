@@ -19,22 +19,29 @@ Grid.css was created using a number of open source projects:
 
 And of course Grid.css itself is open source with a [public repository][GitHub].
 
-### How to use
-Add the following meta tag to your HTML’s <head> section to keep viewport scale:
-```html
-<meta name="viewport" content="width=device-width,initial-scale=1">
+## Install
+Using bower:
+```sh
+bower install grid.css
 ```
 
-Add the following stylesheet to your HTML’s <head> section:
+## How to use
+First, include the file 'grid.min.css' located on the dist folder to your HTML’s <head> section:
 
 ```html
 <link rel="stylesheet" href="YOUR_STYLE_PATH/grid.min.css">
 ```
-
-or if you want to use the bundle that includes the reset.css by [Eric A. Meyer][meyerweb] (recommended)
-
+or if you want to use the bundle that includes the reset.css by [Eric A. Meyer][meyerweb] (recommended).
+It is also available via third-party [CDN]
 ```html
 <link rel="stylesheet" href="YOUR_STYLE_PATH/grid.bundle.min.css">
+```
+
+> Thanks to [Ryan Grove] for [RawGit].
+
+Now, add the following meta tag to your HTML’s <head> section to keep viewport scale:
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1">
 ```
 
 Then the markups:
@@ -111,3 +118,6 @@ The **Grid.css** source code is issued under [MIT license][MIT], a permissive fr
    [Grid Demo]: <http://bunomonteiro.github.io/grid.css/>
    [meyerweb]: <http://meyerweb.com/eric/tools/css/reset/>
    [MIT]: <http://opensource.org/licenses/MIT>
+   [Ryan Grove]: <http://wonko.com/>
+   [RawGit]: <https://rawgit.com>
+   [CDN]: <https://cdn.rawgit.com/bunomonteiro/grid.css/master/dist/grid.bundle.min.css>
