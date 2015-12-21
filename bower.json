@@ -1,0 +1,26 @@
+{
+  "name": "grid.css",
+  "version": "1.0.0",
+  "description": "A simple, responsive, mobile first and and without dependencies 16-columns grid system.",
+  "main": "dist/grid.min.css",
+  "authors": [
+    "Bruno Monteiro"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "grid",
+    "css",
+    "sass",
+    "open",
+    "source"
+  ],
+  "homepage": "https://github.com/bunomonteiro/grid.css",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
