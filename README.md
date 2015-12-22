@@ -4,7 +4,7 @@ A simple, responsive, mobile first and and without dependencies 16-columns grid 
 Don't worry about the size. Minified and gzipped is less than 3.5kb.
 
 ### Version
-1.0.0
+1.1.0
 
 ### Maintained by
 [Bruno Monteiro][b'uno], also known as [b'uno]. ([linkedin] - [hashcode] - [twitter] - [facebook])
