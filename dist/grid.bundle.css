@@ -1,7 +1,7 @@
 /**
  * grid.css - A simple and semantic responsive sass/css grid system.
  * @author Bruno Monteiro
- * @version v1.0.0
+ * @version v1.1.0
  * @link https://github.com/bunomonteiro/grid.css
  * @license MIT
  */
@@ -113,6 +113,25 @@ table {
   margin-right: 1%;
   min-height: 1px;
   width: 100%;
+}
+
+.container.flex > .row,
+.container .row.flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.container.non-flex > .row,
+.container .row.non-flex {
+  display: block;
 }
 
 .container.fluid .col.xs-1,
@@ -1747,7 +1766,7 @@ table {
 }
 
 .show {
-  display: initial !important;
+  display: block !important;
 }
 
 @media (max-width: 549px) {
@@ -1755,7 +1774,7 @@ table {
     display: none !important;
   }
   .visible-xs {
-    display: initial !important;
+    display: block !important;
   }
 }
 
@@ -1764,7 +1783,7 @@ table {
     display: none !important;
   }
   .visible-sm {
-    display: initial !important;
+    display: block !important;
   }
 }
 
@@ -1773,7 +1792,7 @@ table {
     display: none !important;
   }
   .visible-md {
-    display: initial !important;
+    display: block !important;
   }
 }
 
@@ -1782,7 +1801,7 @@ table {
     display: none !important;
   }
   .visible-lg {
-    display: initial !important;
+    display: block !important;
   }
 }
 
@@ -1791,6 +1810,6 @@ table {
     display: none !important;
   }
   .visible-xl {
-    display: initial !important;
+    display: block !important;
   }
 }
