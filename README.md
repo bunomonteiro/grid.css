@@ -120,4 +120,4 @@ The **Grid.css** source code is issued under [MIT license][MIT], a permissive fr
    [MIT]: <http://opensource.org/licenses/MIT>
    [Ryan Grove]: <http://wonko.com/>
    [RawGit]: <https://rawgit.com>
-   [CDN]: <https://cdn.rawgit.com/bunomonteiro/grid.css/master/dist/grid.bundle.min.css>
+   [CDN]: <https://cdn.rawgit.com/bunomonteiro/grid.css/v1.1.0/dist/grid.bundle.min.css>
