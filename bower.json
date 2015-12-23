@@ -1,6 +1,6 @@
 {
   "name": "grid.css",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A simple, responsive, mobile first and and without dependencies 16-columns grid system.",
   "main": "dist/grid.min.css",
   "authors": [

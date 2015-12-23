@@ -1,7 +1,7 @@
 /**
  * grid.css - A simple and semantic responsive sass/css grid system.
  * @author Bruno Monteiro
- * @version v1.1.0
+ * @version v1.2.0
  * @link https://github.com/bunomonteiro/grid.css
  * @license MIT
  */
@@ -1647,7 +1647,7 @@
   }
 }
 
-/* tutilities */
+/* utilities */
 .margin-top {
   margin-top: 1% !important;
 }
@@ -1720,46 +1720,291 @@
 }
 
 @media (max-width: 549px) {
-  .hidden-xs {
+  .xs-margin-top {
+    margin-top: 1% !important;
+  }
+  .xs-margin-right {
+    margin-right: 1% !important;
+  }
+  .xs-margin-bottom {
+    margin-bottom: 1% !important;
+  }
+  .xs-margin-left {
+    margin-left: 1% !important;
+  }
+  .xs-pull-left {
+    float: left !important;
+  }
+  .xs-center {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .xs-pull-right {
+    float: right !important;
+  }
+  .xs-text-left {
+    text-align: left !important;
+  }
+  .xs-text-center {
+    text-align: center !important;
+  }
+  .xs-text-right {
+    text-align: right !important;
+  }
+  .xs-text-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .xs-clearfix {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .xs-clearfix:before, .xs-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .xs-clearfix:after {
+    clear: both;
+  }
+  .xs-hidden {
     display: none !important;
   }
-  .visible-xs {
+  .xs-visible {
     display: block !important;
   }
 }
 
 @media (min-width: 550px) and (max-width: 749px) {
-  .hidden-sm {
+  .sm-margin-top {
+    margin-top: 1% !important;
+  }
+  .sm-margin-right {
+    margin-right: 1% !important;
+  }
+  .sm-margin-bottom {
+    margin-bottom: 1% !important;
+  }
+  .sm-margin-left {
+    margin-left: 1% !important;
+  }
+  .sm-pull-left {
+    float: left !important;
+  }
+  .sm-center {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .sm-pull-right {
+    float: right !important;
+  }
+  .sm-text-left {
+    text-align: left !important;
+  }
+  .sm-text-center {
+    text-align: center !important;
+  }
+  .sm-text-right {
+    text-align: right !important;
+  }
+  .sm-text-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sm-clearfix {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .sm-clearfix:before, .sm-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .sm-clearfix:after {
+    clear: both;
+  }
+  .sm-hidden {
     display: none !important;
   }
-  .visible-sm {
+  .sm-visible {
     display: block !important;
   }
 }
 
 @media (min-width: 750px) and (max-width: 999px) {
-  .hidden-md {
+  .md-margin-top {
+    margin-top: 1% !important;
+  }
+  .md-margin-right {
+    margin-right: 1% !important;
+  }
+  .md-margin-bottom {
+    margin-bottom: 1% !important;
+  }
+  .md-margin-left {
+    margin-left: 1% !important;
+  }
+  .md-pull-left {
+    float: left !important;
+  }
+  .md-center {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .md-pull-right {
+    float: right !important;
+  }
+  .md-text-left {
+    text-align: left !important;
+  }
+  .md-text-center {
+    text-align: center !important;
+  }
+  .md-text-right {
+    text-align: right !important;
+  }
+  .md-text-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .md-clearfix {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .md-clearfix:before, .md-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .md-clearfix:after {
+    clear: both;
+  }
+  .md-hidden {
     display: none !important;
   }
-  .visible-md {
+  .md-visible {
     display: block !important;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
-  .hidden-lg {
+  .lg-margin-top {
+    margin-top: 1% !important;
+  }
+  .lg-margin-right {
+    margin-right: 1% !important;
+  }
+  .lg-margin-bottom {
+    margin-bottom: 1% !important;
+  }
+  .lg-margin-left {
+    margin-left: 1% !important;
+  }
+  .lg-pull-left {
+    float: left !important;
+  }
+  .lg-center {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .lg-pull-right {
+    float: right !important;
+  }
+  .lg-text-left {
+    text-align: left !important;
+  }
+  .lg-text-center {
+    text-align: center !important;
+  }
+  .lg-text-right {
+    text-align: right !important;
+  }
+  .lg-text-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lg-clearfix {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .lg-clearfix:before, .lg-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .lg-clearfix:after {
+    clear: both;
+  }
+  .lg-hidden {
     display: none !important;
   }
-  .visible-lg {
+  .lg-visible {
     display: block !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .hidden-xl {
+  .xl-margin-top {
+    margin-top: 1% !important;
+  }
+  .xl-margin-right {
+    margin-right: 1% !important;
+  }
+  .xl-margin-bottom {
+    margin-bottom: 1% !important;
+  }
+  .xl-margin-left {
+    margin-left: 1% !important;
+  }
+  .xl-pull-left {
+    float: left !important;
+  }
+  .xl-center {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .xl-pull-right {
+    float: right !important;
+  }
+  .xl-text-left {
+    text-align: left !important;
+  }
+  .xl-text-center {
+    text-align: center !important;
+  }
+  .xl-text-right {
+    text-align: right !important;
+  }
+  .xl-text-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .xl-clearfix {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .xl-clearfix:before, .xl-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .xl-clearfix:after {
+    clear: both;
+  }
+  .xl-hidden {
     display: none !important;
   }
-  .visible-xl {
+  .xl-visible {
     display: block !important;
   }
 }
